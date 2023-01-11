@@ -1,0 +1,60 @@
+.header{
+  max-width: 1440px;
+  width: 100vw;
+  margin: 0 auto;
+  height: 102px;
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .left {
+      width: 70px;
+      height: 92px;
+      margin-left: 112px;
+      margin-right:259px;
+    }
+    .right {
+      width: 879px;
+      height: 46px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      .text{
+        margin-right: 40px;
+        color: #E75624;
+        font-family: 'Readex Pro';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+      }
+      .buttons{
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 100px;
+        width: 171px;
+        height: 46px;
+        background: #E75624;
+        border: 1px solid #E75624;
+        border-radius: 100px;
+        color: white;
+      }
+      .button {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        background: #E75624;
+        border: 1px solid #E75624;
+        color: white;
+      }
+    }
+    .item{
+      display: flex;
+      align-items: center;
+      font-size: 22px;
+    }
+  }
+}
