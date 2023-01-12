@@ -6,18 +6,62 @@ const Header = () => {
     <div className="header">
       <div className="wrapper">
         <div className="left">
-          <img src="/public/img/Logo-AIE 1.png" alt="logo"/>
-          left
+          <img src="/img/Logo-AIE 1.png" alt="logo"/>
         </div>
         <div className="right">
-          <p className="text">Nous découvrir</p>
-          <p className="text">Nos activités</p>
-          <p className="text">Nos actualités</p>
-          <p className="text">Nos adresses</p>
-          <p className="text">Postuler</p>
+        <div class="dropdown">
+            <button class="dropbtn">Nous découvrir</button>
+            <div class="dropdown-content">
+              <a href="#">Ressourceries</a>
+              <a href="#">Borne de collecte</a>
+              <a href="#">Valorisation textile</a>
+              <a href="#">Nos boutiks</a>
+              <a className="formations" href="#">Nos formations</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">Nos activités</button>
+            <div class="dropdown-content">
+              <a href="#">Ressourceries</a>
+              <a href="#">Borne de collecte</a>
+              <a href="#">Valorisation textile</a>
+              <a href="#">Nos boutiks</a>
+              <a className="formations" href="#">Nos formations</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">Nos actualités</button>
+            <div class="dropdown-content">
+              <a href="#">Ressourceries</a>
+              <a href="#">Borne de collecte</a>
+              <a href="#">Valorisation textile</a>
+              <a href="#">Nos boutiks</a>
+              <a className="formations" href="#">Nos formations</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">Nos adresses</button>
+            <div class="dropdown-content">
+              <a href="#">Ressourceries</a>
+              <a href="#">Borne de collecte</a>
+              <a href="#">Valorisation textile</a>
+              <a href="#">Nos boutiks</a>
+              <a className="formations" href="#">Nos formations</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">Postuler</button>
+            <div class="dropdown-content">
+              <a href="#">Ressourceries</a>
+              <a href="#">Borne de collecte</a>
+              <a href="#">Valorisation textile</a>
+              <a href="#">Nos boutiks</a>
+              <a className="formations" href="#">Nos formations</a>
+            </div>
+          </div>
           <div className="buttons">
             <PhoneIcon/>
-            <button className="button">0596 76 38 18</button>
+            <a className="tel" href="tel:0596763818">0596 76 38 18</a>
           </div>
         </div>
       </div>
