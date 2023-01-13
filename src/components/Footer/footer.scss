@@ -1,7 +1,38 @@
 .footer{
   margin-top: 36px;
   margin-bottom: 100px;
+  position: relative;
   .contact{
     cursor: pointer;
+  }
+  .open-modal-btn{
+    position: absolute;
+    top: 234px;
+    left: 868px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 4.5px 16px;
+    width: 152px;
+    height: 56px;
+    background: #FFFFFF;
+    border-radius: 15px;
+    font-family: 'Poppins';
+    color:  #FF6800;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 47px;
+    text-align: center;
+    text-transform: capitalize;
+  }
+  .modal{
+    background-color: transparent;
+    display: flex;
+    position: aboslute;
+    top:308px;
+    left:-250px;
+    // justify-content: center;
+    // align-items: center;
   }
 }

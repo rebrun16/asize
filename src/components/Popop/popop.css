@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-body {
+/* body {
   font-family: Lato;
   height: 97vh;
   width: 100%;
@@ -10,16 +10,16 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
+} */
 
-.form {
+.forms {
   width: 662px;
   height: 604px;
   background: #01040D;
   border-radius: 4px;
 }
 
-.form > h1 {
+.forms > h1 {
   display: flex;
   justify-content: center;
   font-family: 'Montserrat';
@@ -63,11 +63,11 @@ input {
   width: 85%;
   background-color: transparent;
   font-family: 'Montserrat';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 160%;
-color: #FFFFFF;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #FFFFFF;
 }
 .invalid {
   border: 1px solid #db2269;
@@ -83,8 +83,16 @@ input, select {
   padding: 42px 50px 23px 50px;
   border: 1px solid transparent;
   display: block;
-  color: white;
+
   border-bottom: 1px solid white;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.6;
 }
 select {
   width: 100%;
@@ -92,12 +100,21 @@ select {
 }
 input[type="checkbox"] {
   display: inline-block;
-  width: auto;
+  width: 24px;
+  height: 25.84px;
+  border-radius: 4px;
   margin-top: -8px;
   margin-right: 10px;
 }
-
-button {
+.plus{
+  position: absolute;
+  top:40px;
+  left:375px;
+  width: 24px;
+  height: 24px;
+  transform: rotate(45deg);
+}
+/* button {
   height: 60px;
   width: 560px;
   cursor: pointer;
@@ -106,17 +123,31 @@ button {
   background: #01040D;
   color: #fefefe;
   margin: 27px 51px 49px 50px;
-}
-button:hover {
+} */
+/* button:hover {
   background-color: #4A4E69;
   color: #fefefe;
 }
 button:disabled {
   opacity: 0.2;
-}
+} */
 
 .required {
   color:#db2269;
   font-size: 0.8em;
   margin-top: 0.5em;
+}
+.send {
+  background-color: transparent;
+  width: 560px;
+  height: 60px;
+  margin-top: 27px;
+  border: 2px solid white;
+  color: white;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.5px;
 }

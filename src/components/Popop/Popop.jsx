@@ -1,4 +1,4 @@
-import { useCallback } from "react";
+import { useCallback, useState } from "react";
 import React, { Component } from "react";
 import { Form, Field } from "@progress/kendo-react-form";
 import "./popop.css"
@@ -95,16 +95,21 @@ export default function Popop() {
     
     event.preventDefault();
   }
-
+  const [open, setOpen] = useState(false);
   return (
-    <Form className="form"
+    <Form className="forms"
       onSubmit={handleSubmit}
       initialValues={{
         email: "Your email", Name: "First Name", Last: "Last Name",company: "Company name(optional)", password: "",enqiry: "Enqiry", country: "", acceptedTerms: false
       }}
       render={(formRenderProps) => (
-        <div className="form" onSubmit={formRenderProps.onSubmit}>
+        <div className="forms" onSubmit={formRenderProps.onSubmit}>
           <h1 className="contact">CONTACT US</h1>
+          <img className="plus" src="/img/plus.svg"/>
+          <svg onClick={() => setOpen(false)}  height="400" viewBox="0 0 400 400" width="400">
+          <title />
+          <path d="M114,100l49-49a9.9,9.9,0,0,0-14-14L100,86,51,37A9.9,9.9,0,0,0,37,51l49,49L37,149a9.9,9.9,0,0,0,14,14l49-49,49,49a9.9,9.9,0,0,0,14-14Z" />
+        </svg>
           <div className="names">
           <Field
               className="name"
@@ -120,26 +125,27 @@ export default function Popop() {
             name="email"
             fieldType="email"
             component={Input}
-            validator={requiredValidator} />
+            validator={[requiredValidator, emailValidator]} />
 
           <Field
             name="company"
             fieldType="text"
             component={Input}
-            validator={[requiredValidator, emailValidator]} />
+            validator={requiredValidator} />
 
           <Field 
             name="enqiry"
             component={Input}
             validator={requiredValidator} />
           <div className="box">
-            <Field
-              label="I agree to the Terms of Use and Privecy Policy"
+            {/* <Field
+              label= "I agree to the Terms of Use and Privecy Policy"
               name="acceptedTerms"
               component={Checkbox}
-              validator={requiredValidator} />
+              validator={requiredValidator} /> */}
+              {/* <input className="agree" type="checkbox" id="scales" name="scales">I agree to the <span>Terms of Use</span> and <span>Privecy Policy"</span></input> */}
           </div>
-          <button disabled={!formRenderProps.allowSubmit}>
+          <button className="send" disabled={!formRenderProps.allowSubmit}>
             Send
           </button>
         </div>
