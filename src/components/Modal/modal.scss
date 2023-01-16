@@ -73,12 +73,13 @@
 
   svg {
     position: absolute;
-    right: -140px;
-    top: 45px;
+    right: -142px;
+    top: 48px;
     height: 24px;
     width: 24px;
-    opacity: 0.3;
+    opacity: 0.1;
     cursor: pointer;
+    z-index: 100;
 
     &:hover {
       opacity: 1;
@@ -99,7 +100,7 @@
 
   &.show {
     opacity: 1;
-    visibility: visible;
+    // visibility: visible;
 
     .modal {
       position: absolute;
