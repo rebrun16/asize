@@ -1,21 +1,22 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+
 import Popop from '../Popop/Popop';
-import "./footer.scss"
+import './footer.scss';
 const Footer = () => {
   const [open, setOpen] = useState(false);
 
   const Modal = ({ open, setOpen, children }) => (
-    <div className={`overlay animated ${open ? "show" : ''}`}>
+    <div className={`overlay animated ${open ? 'show' : ''}`}>
       <div className="modal">
         {children}
       </div>
     </div>
-  )
+  );
 
   return (
-    <div className='footer'>
-      <img className='contact' src='/img/Call to Action.png'/>
-      <button onClick={() => setOpen(true)} className='open-modal-btn'>
+    <div className="footer">
+      <img className="contact" src="/img/Call to Action.png"/>
+      <button onClick={() => setOpen(true)} className="open-modal-btn">
         Contact US
       </button>
       <Modal className="modal" open={open} setOpen={setOpen}>
@@ -28,7 +29,7 @@ const Footer = () => {
         </div>
       </Modal>
     </div>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

@@ -1,7 +1,7 @@
-import Slider from "react-slick";
+import Slider from 'react-slick';
 
-import "./slick.css";
-import './slick-theme.css'
+import './slick.css';
+import './slick-theme.css';
 
 export const SimpleSlider = () => {
   const settings = {
@@ -9,7 +9,7 @@ export const SimpleSlider = () => {
     infinite: true,
     speed: 500,
     slidesToShow: 3,
-    slidesToScroll: 2
+    slidesToScroll: 2,
   };
 
   return (
@@ -93,5 +93,5 @@ export const SimpleSlider = () => {
         </Slider>
       </div>
     </>
-  )
-}
+  );
+};

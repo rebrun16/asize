@@ -1,4 +1,4 @@
-import "./header.scss"
+import './header.scss';
 import PhoneIcon from '@mui/icons-material/Phone';
 const Header = () => {
 
@@ -9,7 +9,7 @@ const Header = () => {
           <img src="/img/Logo-AIE 1.png" alt="logo"/>
         </div>
         <div className="right">
-        <div class="dropdown">
+          <div class="dropdown">
             <button class="dropbtn">Nous découvrir</button>
             <div class="dropdown-content">
               <a href="#">Ressourceries</a>
