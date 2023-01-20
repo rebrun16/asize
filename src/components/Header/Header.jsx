@@ -6,7 +6,7 @@ const Header = () => {
     <div className="header">
       <div className="wrapper">
         <div className="left">
-          <img src="/img/Logo-AIE 1.png" alt="logo"/>
+          <img className="logo" src="/img/Logo-AIE 1.png" alt="logo"/>
         </div>
         <div className="right">
           <div class="dropdown">

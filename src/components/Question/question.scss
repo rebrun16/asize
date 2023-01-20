@@ -3,7 +3,10 @@
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
-
+  .wrap {
+    display: flex;
+    justify-content: space-around;
+  }
   .left {
     margin: 112.5px 0px 112.5px 0px;
     .question{
@@ -34,4 +37,69 @@
     height: 520px;
     margin:40px 111px 40px 136px;
   }
+}
+@media screen and (max-width: 1660px) {
+  .wrapper {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .questions .left {
+    margin: 112.5px 0px 112.5px 85px;
+}
+}
+@media screen and (max-width: 1366px) {
+  
+}
+@media screen and (max-width: 1280px) {
+  .questions .right {
+    width: 470px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .questions .right {
+    width: 165px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .questions .right {
+    width: 0px;
+  }
+  .questions .left {
+    margin: 50px 10px 50px 30px;
+  }
+}
+@media screen and (max-width: 560px) {
+  
+}
+@media screen and (max-width: 480px) {
+  .right{
+    width: 200px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .questions {
+    display: block;
+    .left{
+      width: 400px;
+      margin-left: 200px;
+    }
+    .right{
+      width: 0px;
+    }
+  }
+  .image{
+    width: 0px;
+    cursor: pointer;
+    margin-left: 83px;
+    }
+  }
+
+@media screen and (max-width: 375px) {
+  .image{
+    width: 300px;
+  }
+}
+@media screen and (max-width: 320px) {
+  
 }

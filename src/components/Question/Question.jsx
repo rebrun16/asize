@@ -23,20 +23,22 @@ const Question = () => {
   return (
     <>
       <div className="questions">
-        <div className="left">
-          <h2 className="question">Frequently Asked Question</h2>
-          <div className="subtitle">Excepteur sint occaecat cupidatat non proident</div>
-          <AccordionWrapper>
-            {data.map((item, index) => (
-              <AccordionItem key={index} index={index} title={item.title} description={item.description} />
-            ))}
-          </AccordionWrapper>
-        </div>
-        <div className="right">
-          <div className="img">
-            <span className="bg">
-              <img src="/img/Image.png" alt="bb"/>
-            </span>
+        <div className="wrap">
+          <div className="left">
+            <h2 className="question">Frequently Asked Question</h2>
+            <div className="subtitle">Excepteur sint occaecat cupidatat non proident</div>
+            <AccordionWrapper>
+              {data.map((item, index) => (
+                <AccordionItem key={index} index={index} title={item.title} description={item.description} />
+              ))}
+            </AccordionWrapper>
+          </div>
+          <div className="right">
+            <div className="img">
+              <span className="bg">
+                <img className="image" src="/img/Image.png" alt="bb"/>
+              </span>
+            </div>
           </div>
         </div>
       </div>

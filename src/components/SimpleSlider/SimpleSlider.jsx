@@ -19,7 +19,8 @@ export const SimpleSlider = () => {
         <h2>Excepteur sint occaecat cupidatat non proident</h2>
         <Slider {...settings}>
           <div className="card">
-            <h3 className="title">Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur.</h3>
+            <h3 className="title">Nulla vitae elit libero, a pharetra augue. 
+            Aenean lacinia bibendum nulla sed consectetur.</h3>
             <div className="bottom">
               <div className="left">
                 <img src="/img/avatar.png" alt="avatar" />
@@ -31,7 +32,8 @@ export const SimpleSlider = () => {
             </div>
           </div>
           <div className="card">
-            <h3 className="title">Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur.</h3>
+            <h3 className="title">Nulla vitae elit libero, a pharetra augue. 
+            Aenean lacinia bibendum nulla sed consectetur.</h3>
             <div className="bottom">
               <div className="left">
                 <img src="/img/avatar.png" alt="avatar" />

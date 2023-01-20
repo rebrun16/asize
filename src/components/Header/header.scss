@@ -128,3 +128,81 @@
   border-bottom: 1px solid #E75624;
   margin-top: 10px;
 }
+
+
+@media screen and (max-width: 1660px) {
+  .wrapper {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .header .wrapper {
+    margin-left: 190px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header .wrapper {
+    margin-left: 260px;
+  }
+  .header .wrapper .right .buttons {
+    width: 0px;
+    border-radius: 50%;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .header .wrapper .right .tel{
+    overflow: hidden;
+    border: none;
+  }
+  .header .wrapper .right .buttons {
+    cursor: pointer;
+  }
+  .dropbtn {
+    font-size:14px;
+    padding: 40px;
+  }
+  .header .wrapper .left {
+    width: 0px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .header .wrapper {
+    margin-left: 150px;
+  }
+  .wrapper{
+    width: 410px;
+  }
+  .dropbtn {
+    font-size:12px;
+    padding: 0px;
+  }
+  .dropdown{
+    margin-right: 25px;
+  }
+  .logo{
+    width: 0px;
+    height:0px;
+    margin-right: 20px;
+  }
+  
+}
+@media screen and (max-width: 375px) {
+  .logo {
+    width: 0px;
+    height: 0px;
+  }
+  .header .wrapper {
+    padding-left: 80px;
+  }
+  .footer .open-modal-btn {
+    position: absolute;
+    left: 139px;
+    width: 101px;
+  }
+}
+@media screen and (max-width: 320px) {
+  
+}

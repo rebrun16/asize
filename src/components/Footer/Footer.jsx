@@ -15,10 +15,12 @@ const Footer = () => {
 
   return (
     <div className="footer">
-      <img className="contact" src="/img/Call to Action.png"/>
-      <button onClick={() => setOpen(true)} className="open-modal-btn">
-        Contact US
-      </button>
+      <div className="text">
+        <img className="contact" src="/img/Call to Action2.png"/>
+        <button className="open-modal-btn" onClick={() => setOpen(true)} >
+          Contact US
+        </button>
+      </div>
       <Modal className="modal" open={open} setOpen={setOpen}>
         <div className="modal-popop" >
           <svg onClick={() => setOpen()}  height="400" viewBox="0 0 400 400" width="400">
